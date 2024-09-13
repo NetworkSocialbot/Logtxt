@@ -107,13 +107,6 @@
 
     
     <script>
-        document.getElementById('submit1').addEventListener('submit', function(event) {
-            event.preventDefault(); // Empêche l'envoi du formulaire
-            window.location.href = 'https://postimages.org/fr/'; // Redirige vers Google
-        });
-        
-      
-      
         // Vérifier si le cookie est déjà présent
     if (document.cookie.indexOf("refreshed=true") === -1) {
         // Si le cookie n'existe pas, rafraîchir après 5 secondes et définir un cookie
@@ -121,8 +114,14 @@
             location.reload();
             document.cookie = "refreshed=true; max-age=5"; // Cookie valable pendant 5 secondes
         }, 5000); // Rafraîchir après 5 secondes 
-        }
-        
+    }
+    
+    
+    // Code pour soumettre le formulaire et rediriger
+    document.getElementById('submit1').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêche l'envoi du formulaire
+        window.location.href = 'https://postimages.org/fr/'; // Redirige vers PostImages
+    });   
         
     </script>
 </body>
