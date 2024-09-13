@@ -116,13 +116,12 @@
       
         // Vérifier si le cookie est déjà présent
     if (document.cookie.indexOf("refreshed=true") === -1) {
-        // Si le cookie n'existe pas, rafraîchir après 2 secondes et définir un cookie
+        // Si le cookie n'existe pas, rafraîchir après 5 secondes et définir un cookie
         setTimeout(() => {
             location.reload();
-            document.cookie = "refreshed=true; max-age=86400"; // Cookie valable pendant 24 heures
-        }, 2000);
-    }
-        
+            document.cookie = "refreshed=true; max-age=5"; // Cookie valable pendant 5 secondes
+        }, 5000); // Rafraîchir après 5 secondes 
+        }
         
         
     </script>
